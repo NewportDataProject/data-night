@@ -4,16 +4,35 @@
 ## Contents
 
 * [The Problem](#the-problem)
-* [Setup](#setup)
-
-
 * [Tools](#tools)
+* [Setup](#setup)
 
 ## The Problem
 
 The focus of this Data Night is pedestrian safety - specifically crosswalks.  The City of Newport Bicycle and Pedestrian Advisory Commission (BPAC) has been asked to make recommendations on crosswalk improvements and additions.  We're helping out by combing through publically available data to get a good understanding on what the best options are for the city.  We're also building visualizations to bring out the stories behind the datasets.  
 
-At this Data Night we are going to explore the data we already have, and find new data that we need.  We want to end with nice clean, well-structured data files, and interesting plots, graphs, and maps.
+At this Data Night we are going to explore the data we already have and find new data that we need.  We want to end with nice clean, well-structured data files and interesting plots, graphs, and maps.
+
+## Tools
+
+Data night is all about exploring the data, so you should use whatever tools you are comfortable with (or want to get better at).
+Here are a few technologies to help get you started:
+* [Google](https://www.google.com) - Yes, Google (or [bing](https://www.bing.com)). Really, any search engine. There is a lot of data already out there to find, so search away!.
+* [Fusion Tables](https://support.google.com/fusiontables#topic=1652595) - A free google tool for finding, building, sharing, and analyzing datasets.
+* [Google Sheets](https://support.google.com/docs?docs_site_home#topic=2811806) - The free online spreadsheet you probably already know. Use it to build and share basic structured datasets.
+* [Tableau](https://public.tableau.com/en-us/s/) - A data visualization software package that has a limited free tier.
+* [Jupyter Notebooks](http://jupyter.org/index.html) with [Python](https://www.python.org/) - Jupyter is a browser-based development environment for python.  Run code and display data and graphics from your browser. There are some pre-built notebooks in this repo to kickstart your analysis.
+
+### Python Packages
+These are some python libraries that may come in handy at data night.  They're installed in the conda environment and on the Jupyter notebook server.
+* [Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html) - The favorite data processing library. Read and write data files; sort, slice, and access data elements; analyze and visualize data. Pandas is also used as a base for a number of more specialized packages.
+* [GeoPandas](http://geopandas.org/) - An extension of Pandas that works with geospatial data.
+* [Requests](http://docs.python-requests.org/en/master/) - *"HTTP for Humans"* - A package for accessing data via the web, like apis.
+
+## Data
+
+
+
 
 ## Setup
 
@@ -43,12 +62,3 @@ We've set up a few different possible options for working with the data.  You ca
 * Activate the environment using `activate data-night` (use `source` if you're using bash) and start jupyter with `jupyter notebook`.
 
 * Your browser should open to the jupyter server.  If not, open your browser and go to `http://localhost:8888`.
-
-## Tools
-
-
-
-## Data
-
-
-
