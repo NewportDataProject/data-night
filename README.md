@@ -44,21 +44,21 @@ We've set up a few different possible options for working with the data.  You ca
 * [Conda (Python)](#conda-python)
 
 ### Docker
+**Note: Currently this is still WIP and not fully supported yet.**
 
-* Install [docker](https://www.docker.com).
-* In the command shell, navigate to this folder run the command `docker run`
-* Open a browser and go to `http://[CONTAINER_IP]:8888`
+1. Install [docker](https://www.docker.com).
+1. In the command shell, navigate to this folder run the command `docker run`
+1. Open a browser and go to `http://[CONTAINER_IP]:8888`
 
 ### Conda (Python)
+**Note: Currently this is only supported for Windows.**
 
-* If you don't have it already, install [Anaconda](https://www.anaconda.com) or [miniconda](https://conda.io/miniconda.html).
-
-* Set up the data-night conda environment with the command:
+1. If you don't have it already, install [Anaconda](https://www.anaconda.com) or [miniconda](https://conda.io/miniconda.html).
+2. Set up the data-night conda environment with the command:
 
   ```shell
   conda env create -f environment.yml
   ```
 
-* Activate the environment using `activate data-night` (use `source` if you're using bash) and start jupyter with `jupyter notebook`.
-
-* Your browser should open to the jupyter server.  If not, open your browser and go to `http://localhost:8888`.
+3. Activate the environment using `activate data-night` (use `source` if you're using bash) and start jupyter with `jupyter notebook`.
+4. Your browser should open to the jupyter server.  If not, open your browser and go to `http://localhost:8888`.
