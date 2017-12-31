@@ -54,11 +54,10 @@ We've set up a few different possible options for working with the data.  You ca
 **Note: Currently this is only supported for Windows.**
 
 1. If you don't have it already, install [Anaconda](https://www.anaconda.com) or [miniconda](https://conda.io/miniconda.html).
-2. Set up the data-night conda environment with the command:
+1. Set up the data-night conda environment with the command:
 
   ```shell
   conda env create -f environment.yml
   ```
-
 3. Activate the environment using `activate data-night` (use `source` if you're using bash) and start jupyter with `jupyter notebook`.
 4. Your browser should open to the jupyter server.  If not, open your browser and go to `http://localhost:8888`.
