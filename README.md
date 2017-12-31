@@ -62,7 +62,7 @@ For the sake of Data Night, the intent of using Docker is provide a unified and 
 1. [Install Docker](https://www.docker.com/community-edition).
 1. In the command shell, navigate to the root of this repository
 1. Run `docker build -t data-night .`  (First time running this may a take a little time)
-1. Now you can connect to your container via a shell `docker run -p 8889:8888 -it data-night`
+1. Now you can connect to your container via a shell `docker run -p 8889:8889 -it data-night`
 
 Verify everything is working
 ```shell
