@@ -44,28 +44,40 @@ We've set up a few different possible options for working with the data.  You ca
 * [Conda (Python)](#conda-python)
 
 The base enviornment supported will be:
-- Ubuntu 16.04 (Linux)
+- [Linux (Debian)](https://www.debian.org/)
 - Developers tools like `curl`, `vim`, and `git`
-- Python 3
-- Jupyter
+- [Anaconda](https://www.anaconda.com/) SDK
+- [Python](https://www.python.org/) 3
+- [Jupyter](http://jupyter.org/)
 
 > See something missing, please open an issue or PR and make a request!
 
 ### Docker
-Docker is a tool for creating / deploying reproducible and consistent environments called "containers".  The idea behind creating a container is that the
+[Docker](https://www.docker.com) is a tool for creating / deploying reproducible and consistent environments called "containers".  The idea behind creating a container is that the
 environment / runtime can be scripted and thus rebuilt the same way easily over and over again.  
 
 For the sake of Data Night, the intent is provide a unified and consistent development environment for anyone to use so as to provide all the tools that are considered most useful in one place.
 
 
-#### Installation
-1. Install [docker](https://www.docker.com).
-1. In the command shell, navigate to this folder run the command `docker run`
-1. Open a browser and go to `http://[CONTAINER_IP]:8888`
+#### Starting a Container
+1. [Install docker](https://www.docker.com/community-edition).
+1. In the command shell, navigate to the root of this repository
+1. Run `docker build -t data-night .`  (First time running this may a take a little time)
+1. Now you can connect to your container via a shell `docker run -p 8888:8888 -it sandbox`
+
+Verify everything is working
+```shell
+:/# python --version
+Python 3.6.3 :: Anaconda, Inc.
+```
 
 #### Usage
-After you've built an image (see above steps), you can connect to it and use it like any other Linux CLI
-
+After you've built an image and connected to a container using the above steps, you can and use it like any other CLI. 
+ 
+For example, to start a jupyter notebook locally, run:
+```shell
+:/# jupyter notebook --ip=127.0.0.1 --allow-root
+```
 
 
 ### Conda (Python)
