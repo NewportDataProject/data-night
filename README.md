@@ -62,7 +62,7 @@ For the sake of Data Night, the intent of using Docker is provide a unified and 
 1. [Install Docker](https://www.docker.com/community-edition).
 1. In the command shell, navigate to the root of this repository
 1. Run `docker build -t data-night .`  (First time running this may a take a little time)
-1. Now you can connect to your container via a shell `docker run -p 8888:8888 -it sandbox`
+1. Now you can connect to your container via a shell `docker run -p 8889:8888 -it data-night`
 
 Verify everything is working
 ```shell
@@ -75,8 +75,10 @@ After you've built an image and connected to a container using the above steps, 
  
 For example, to start a jupyter notebook locally, run:
 ```shell
-:/# jupyter notebook --ip=127.0.0.1 --allow-root
+:/# jupyter notebook --ip=0.0.0.0 --port 8889 --allow-root
 ```
+
+And visit the generated URL after the server starts, e.g. _http://0.0.0.0:8889/?token=39f8a00b806723e69e34ce0c471165100453f3f8f80a2126_
 
 
 ### Conda (Python)
