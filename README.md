@@ -43,12 +43,30 @@ We've set up a few different possible options for working with the data.  You ca
 * [Docker](#docker)
 * [Conda (Python)](#conda-python)
 
-### Docker
-**Note: Currently this is still WIP and not fully supported yet.**
+The base enviornment supported will be:
+- Ubuntu 16.04 (Linux)
+- Developers tools like `curl`, `vim`, and `git`
+- Python 3
+- Jupyter
 
+> See something missing, please open an issue or PR and make a request!
+
+### Docker
+Docker is a tool for creating / deploying reproducible and consistent environments called "containers".  The idea behind creating a container is that the
+environment / runtime can be scripted and thus rebuilt the same way easily over and over again.  
+
+For the sake of Data Night, the intent is provide a unified and consistent development environment for anyone to use so as to provide all the tools that are considered most useful in one place.
+
+
+#### Installation
 1. Install [docker](https://www.docker.com).
 1. In the command shell, navigate to this folder run the command `docker run`
 1. Open a browser and go to `http://[CONTAINER_IP]:8888`
+
+#### Usage
+After you've built an image (see above steps), you can connect to it and use it like any other Linux CLI
+
+
 
 ### Conda (Python)
 **Note: Currently this is only supported for Windows.**
