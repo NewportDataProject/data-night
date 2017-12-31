@@ -43,7 +43,7 @@ We've set up a few different possible options for working with the data.  You ca
 * [Docker](#docker)
 * [Conda (Python)](#conda-python)
 
-The base enviornment supported will be:
+The base environment supported will be:
 - [Debian](https://www.debian.org/) - Linux based operating system
 - [Python](https://www.python.org/) 3 - Programming language
 - [Anaconda](https://www.anaconda.com/) - Python based SDK
