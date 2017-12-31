@@ -44,11 +44,11 @@ We've set up a few different possible options for working with the data.  You ca
 * [Conda (Python)](#conda-python)
 
 The base enviornment supported will be:
-- [Linux (Debian)](https://www.debian.org/)
-- Developers tools like `curl`, `vim`, and `git`
-- [Anaconda](https://www.anaconda.com/) SDK
-- [Python](https://www.python.org/) 3
-- [Jupyter](http://jupyter.org/)
+- [Debian](https://www.debian.org/) - Linux based operating system
+- [Python](https://www.python.org/) 3 - Programming language
+- [Anaconda](https://www.anaconda.com/) - Python based SDK
+- [Jupyter](http://jupyter.org/) Notebook - A web application to assist in documenting multi format documents (text, code, images, etc)
+- Common Developers tools - like `curl`, `vim`, and `git`
 
 > See something missing, please open an issue or PR and make a request!
 
