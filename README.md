@@ -55,8 +55,10 @@ The base environment supported will be:
 ### Docker
 [Docker](https://www.docker.com) is a tool for creating / deploying reproducible and consistent environments called "containers".  The idea behind creating a container is that the environment / runtime can be scripted and thus rebuilt the same way easily over and over again.  
 
-For the sake of Data Night, the intent of using Docker is provide a unified and consistent development environment for anyone to get all the tools that are considered most useful in one place with minimal overhead installing them all manually.
+For the sake of Data Night, the intent of using Docker is provide a unified and consistent environment for anyone to get all the tools that are considered most useful in one place with minimal overhead installing them all manually.
 
+#### Docker Quickstart
+Assuming you have already [installed docker](https://www.docker.com/community-edition), run `docker-compose up -d`, and navigate to [`localhost:8889`](http://localhost:8889) in your browser.
 
 #### Starting a Container
 1. [Install Docker](https://www.docker.com/community-edition).

@@ -18,4 +18,4 @@ services:
     working_dir: /workspace
     # since we don't have an actual process running
     # https://stackoverflow.com/questions/38546755/docker-compose-keep-container-running
-    command: tail -F anything
+    command: jupyter notebook
