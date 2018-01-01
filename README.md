@@ -61,7 +61,7 @@ For the sake of Data Night, the intent of using Docker is provide a unified and 
 #### Starting a Container
 1. [Install Docker](https://www.docker.com/community-edition).
 1. In the command shell, navigate to the root of this repository
-1. Run `docker-compose up`  (First time running this may a take a little time)
+1. Run `docker-compose up -d`  (First time running this may a take a little time)
 1. Now you can connect to your container via a shell `docker exec -it datanight_python_1 /bin/bash`
 
 Verify everything is working
@@ -75,11 +75,12 @@ After you've built an image and connected to a container using the above steps, 
  
 For example, to start a jupyter notebook locally, run:
 ```shell
-:/# jupyter notebook --ip=0.0.0.0 --port 8889 --allow-root
+:/# jupyter notebook --allow-root
 ```
 
 And visit the generated URL after the server starts, e.g. _http://0.0.0.0:8889/?token=39f8a00b806723e69e34ce0c471165100453f3f8f80a2126_
 
+**Note: For windows, use http://127.0.0.0:8889?/token=xxx**
 
 ### Conda (Python)
 **Note: Currently this is only supported for Windows.**
