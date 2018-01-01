@@ -1,15 +1,9 @@
-version: '3.1'
+version: '3.2'
 
 services:
 
-  sandbox:
-    build: .
-    links:
-      - python
-
   python:
-    # TODO reduce duplication of FROM in Dockerfile
-    image: continuumio/anaconda3:5.0.1
+    image: newportdata/datanight_python:initial
     ports:
       - "8889:8889"
     volumes:
@@ -18,4 +12,4 @@ services:
     working_dir: /workspace
     # since we don't have an actual process running
     # https://stackoverflow.com/questions/38546755/docker-compose-keep-container-running
-    command: tail -F anything
+    command: bash -c "source activate datanight && jupyter notebook"
