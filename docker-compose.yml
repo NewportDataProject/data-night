@@ -1,0 +1,15 @@
+version: '3.2'
+
+services:
+
+  python:
+    image: newportdata/datanight_python:initial
+    ports:
+      - "8889:8889"
+    volumes:
+      - ./workspace:/workspace
+      - ./jupyter_notebook_config.py:/root/.jupyter/jupyter_notebook_config.py
+    working_dir: /workspace
+    # since we don't have an actual process running
+    # https://stackoverflow.com/questions/38546755/docker-compose-keep-container-running
+    command: bash -c "source activate datanight && jupyter notebook"

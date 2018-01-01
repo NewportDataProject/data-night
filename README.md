@@ -43,12 +43,46 @@ We've set up a few different possible options for working with the data.  You ca
 * [Docker](#docker)
 * [Conda (Python)](#conda-python)
 
-### Docker
-**Note: Currently this is still WIP and not fully supported yet.**
+The base environment supported will be:
+- [Debian](https://www.debian.org/) - Linux based operating system
+- [Python](https://www.python.org/) 3 - Programming language
+- [Anaconda](https://www.anaconda.com/) - Python based SDK
+- [Jupyter](http://jupyter.org/) Notebook - A web application to assist in documenting multi format documents (text, code, images, etc)
+- Common Developers tools - like `curl`, `vim`, and `git`
 
-1. Install [docker](https://www.docker.com).
-1. In the command shell, navigate to this folder run the command `docker run`
-1. Open a browser and go to `http://[CONTAINER_IP]:8888`
+> See something missing, please open an issue or PR and make a request!
+
+### Docker
+[Docker](https://www.docker.com) is a tool for creating / deploying reproducible and consistent environments called "containers".  The idea behind creating a container is that the environment / runtime can be scripted and thus rebuilt the same way easily over and over again.  
+
+For the sake of Data Night, the intent of using Docker is provide a unified and consistent environment for anyone to get all the tools that are considered most useful in one place with minimal overhead installing them all manually.
+
+#### Docker Quickstart
+Assuming you have already [installed docker](https://www.docker.com/community-edition), run `docker-compose up -d`, and navigate to [`localhost:8889`](http://localhost:8889) in your browser.
+
+#### Starting a Container
+1. [Install Docker](https://www.docker.com/community-edition).
+1. In the command shell, navigate to the root of this repository
+1. Run `docker-compose up -d`  (First time running this may a take a little time)
+1. Now you can connect to your container via a shell `docker exec -it datanight_python_1 /bin/bash`
+
+Verify everything is working
+```shell
+:/# python --version
+Python 3.6.3 :: Anaconda, Inc.
+```
+
+#### Usage
+After you've built an image and connected to a container using the above steps, you can and use it like any other CLI. 
+ 
+For example, to start a jupyter notebook locally, run:
+```shell
+:/# jupyter notebook --allow-root
+```
+
+And visit the generated URL after the server starts, e.g. _http://0.0.0.0:8889/?token=39f8a00b806723e69e34ce0c471165100453f3f8f80a2126_
+
+**Note: For windows, use http://127.0.0.0:8889?/token=xxx**
 
 ### Conda (Python)
 **Note: Currently this is only supported for Windows.**
