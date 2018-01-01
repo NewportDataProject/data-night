@@ -2,11 +2,6 @@ version: '3.2'
 
 services:
 
-  sandbox:
-    build: .
-    links:
-      - python
-
   python:
     image: newportdata/datanight_python:initial
     ports:
