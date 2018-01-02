@@ -15,7 +15,7 @@ At this Data Night we are going to explore the data we already have and find new
 
 ## Setup
 
-This repository has pretty much everything you need to get started. [Fork it](https://help.github.com/articles/fork-a-repo/) and clone it to your computer.  Alternatively, you can [download a zip file](https://github.com/NewportDataProject/data-night/archive/master.zip). 
+This repository has pretty much everything you need to get started. [Fork it](https://help.github.com/articles/fork-a-repo/) and clone it to your computer.  Alternatively, you can [download a zip file](https://github.com/NewportDataProject/data-night/archive/master.zip). Create a new folder in the `/workspace` directory and save your work there so we can pull it all back together!
 
 **There are a few ways to contribute at Data Night:**  
 
