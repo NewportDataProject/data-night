@@ -1,9 +1,10 @@
 from oauthenticator.github import LocalGitHubOAuthenticator
+from .secrets.py import GITHUB_APP_ID, GITHUB_APP_SECRET
 
-server_url = 'https://jupyter.newportdataproject.org'
+server_url = 'http://jupyter.newportdataproject.org'
 admins = {'paulopperman', 'davenamin'}
-github_clientid = 'GET_FROM_GITHUB'
-github_clientsecret = 'GET_FROM_GITHUB'
+github_clientid = GITHUB_APP_ID
+github_clientsecret = GITHUB_APP_SECRET
 
 c.JupyterHub.authenticator_class = LocalGitHubOAuthenticator
 

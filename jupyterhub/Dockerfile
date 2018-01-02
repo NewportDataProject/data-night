@@ -2,9 +2,10 @@ FROM jupyterhub/jupyterhub:latest
 
 RUN pip install oauthenticator jupyter
 
-RUN apt-get update && apt-get install -y gdal-bin imagemagick
+RUN apt-get update && apt-get install -y gcc libspatialindex-dev gdal-bin imagemagick libjpeg-dev
 
-RUN conda install -c conda-forge geopandas bokeh folium osmnx
+RUN pip install geopandas bokeh fiona folium osmnx rtree geopy
+# RUN conda install -c conda-forge geopandas bokeh fiona folium osmnx
 
 ADD jupyterhub_config.py /srv/jupyterhub/jupyterhub_config.py
 
