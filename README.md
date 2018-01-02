@@ -11,7 +11,7 @@
 
 The focus of this Data Night is pedestrian safety - specifically crosswalks.  The City of Newport Bicycle and Pedestrian Advisory Commission (BPAC) has been asked to make recommendations on crosswalk improvements and additions.  We're helping out by combing through publically available data to get a good understanding on what the best options are for the city.  We're also building visualizations to bring out the stories behind the datasets.  
 
-At this Data Night we are going to explore the data we already have and find new data that we need.  We want to end with nice clean, well-structured data files and interesting plots, graphs, and maps. [This notebook](./workspace/intro-to-data.ipynb) walks through the general process of what we are trying to accomplish.
+At this Data Night we are going to explore the data we already have and find new data that we need.  We want to end with nice clean, well-structured data files and interesting plots, graphs, and maps. [This notebook](http://www.newportdataproject.org/data-night/intro-to-data.html) walks through the general process of what we are trying to accomplish.
 
 ## Setup
 
