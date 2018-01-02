@@ -3,7 +3,7 @@ version: '3.2'
 services:
 
   python:
-    image: newportdata/datanight_python:initial
+    image: newportdata/datanight_python
     ports:
       - "8889:8889"
     volumes:
