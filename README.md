@@ -57,6 +57,8 @@ Following the steps above, you can use the Docker like any other shell.
 Python 3.6.3 :: Anaconda, Inc.
 ```
 
+The default working directory is `/workspace`
+
 #### Anaconda (Python)
 
 Anaconda is a distribution of python focused on data science.  It provides a very good package manager `conda` and manages isolated virtual environments so you can run multiple versions of python on your machine for different projects. These instructions will get you up and running with the base packages needed for the examples.
