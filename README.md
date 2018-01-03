@@ -46,7 +46,7 @@ For the sake of Data Night, the intent of using Docker is provide a unified and 
 1. [Install Docker](https://www.docker.com/community-edition).
 2. In the command shell, navigate to the root of this repository
 3. Run `docker-compose up -d`  (First time running this may a take a little time)
-4. Navigate to [`localhost:8889`](http://localhost:8889) in your browser to open a Jupyter Notebook (from the container)
+4. Navigate to [`localhost:8889`](http://localhost:8889) in your browser to access a Jupyter Notebook (from the container)
 
 ##### Using the Container
 Following the steps above, you can use the Docker like any other shell. 
