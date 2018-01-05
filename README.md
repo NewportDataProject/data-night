@@ -46,7 +46,18 @@ For the sake of Data Night, the intent of using Docker is provide a unified and 
 1. [Install Docker](https://www.docker.com/community-edition).
 2. In the command shell, navigate to the root of this repository
 3. Run `docker-compose up -d`  (First time running this may a take a little time)
-4. Navigate to [`localhost:8889`](http://localhost:8889) in your browser
+4. Navigate to [`localhost:8889`](http://localhost:8889) in your browser to access a Jupyter Notebook (from the container)
+
+##### Using the Container
+Following the steps above, you can use the Docker like any other shell. 
+1. Connect to the container by running `docker exec -it datanight_python_1 /bin/bash`
+1. Run some commands!  For example:
+```shell
+:/# python --version
+Python 3.6.3 :: Anaconda, Inc.
+```
+
+The default working directory is `/workspace`
 
 #### Anaconda (Python)
 
